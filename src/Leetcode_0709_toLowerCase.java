@@ -11,9 +11,9 @@ public class Leetcode_0709_toLowerCase {
         }
 
         StringBuilder myStr = new StringBuilder();
-        for(char tmp : str.toCharArray()){
-            myStr.append(myHM.containsKey(tmp)? myHM.get(tmp) : tmp);
-        }
+//        for(char tmp : str.toCharArray()){
+//            myStr.append(myHM.containsKey(tmp)? myHM.get(tmp) : tmp);
+//        }
         return myStr.toString();
     }
 
