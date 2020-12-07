@@ -2,8 +2,8 @@ package Leetcode;
 
 public class Leetcode_0125_Valid_Palindrome {
     public static boolean isPalindrome(String s) {
-        int n = s.length();
-        int left = 0, right = n - 1;
+        if(s == null) { return false; }
+        int left = 0, right = s.length() - 1;
         while(left < right) {
             while(left < right && !isValidChar(s.charAt(left))) {
                 left++;
