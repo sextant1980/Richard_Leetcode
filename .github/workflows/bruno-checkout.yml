@@ -18,5 +18,6 @@ jobs:
     - name: print all stuff
       run: |
         echo 'environment_stage: ${{ vars.ENVIRONMENT_STAGE }}'
+        echo 'ENV: ${ENV}'
         echo 'environment upper: ${ENV^^}'
-        echo 'email: $${{ vars.VERIFIER_CONTACT_EMAIL }}'
+        echo 'email: ${{ vars.VERIFIER_CONTACT_EMAIL }}'
