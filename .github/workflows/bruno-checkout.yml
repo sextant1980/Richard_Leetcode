@@ -13,7 +13,7 @@ env:
 jobs:
   run-bruno:
     runs-on: ubuntu-latest
-    environment: ${{ vars.ENVIRONMENT_STAGE }}
+    environment: 'DEV'
     steps:
     - name: print all stuff
       run: |
