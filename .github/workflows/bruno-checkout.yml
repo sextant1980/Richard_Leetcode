@@ -8,7 +8,7 @@ env:
   vault_ur_base: https://vault-uat.us.equifax.com
   vault_username: ${{ secrets.VAULT_USERNAME }}
   vault_password: ${{ secrets.VAULT_PASSWORD }}
-  ENV: ${{ vars.ENVIRONMENT_STAGE }}'
+  ENV: ${{ vars.ENVIRONMENT_STAGE }}
 
 jobs:
   run-bruno:
