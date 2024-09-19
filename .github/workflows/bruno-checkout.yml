@@ -1,0 +1,21 @@
+name: "Run Bruno Checkout On Push"
+
+on:
+  push:
+
+env:
+  verifier_email: ${{ vars.VERIFIER_CONTACT_EMAIL }}
+  vault_ur_base: https://vault-uat.us.equifax.com
+  vault_username: ${{ secrets.VAULT_USERNAME }}
+  vault_password: ${{ secrets.VAULT_PASSWORD }}
+
+jobs:
+  run-bruno:
+    runs-on: ubuntu-latest
+    environment: ${{ vars.ENVIRONMENT_STAGE }}
+    steps:
+    - name: print all stuff
+      run: |
+        echo 'environment_stage: ${{ vars.ENVIRONMENT_STAGE }}'
+        echo 'environment upper: ${{ vars.ENVIRONMENT_STAGE^^ }}'
+        echo 'email: $${{ vars.VERIFIER_CONTACT_EMAIL }}
