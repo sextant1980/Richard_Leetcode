@@ -23,3 +23,5 @@ jobs:
         echo "email: ${{ vars.VERIFIER_CONTACT_EMAIL }}"
         echo "vault-user: ${vault_username}"
         echo "vault-password: ${vault_password}"
+        echo "vault-user-secret: ${{ secrets.VAULT_USERNAME }}" 
+        echo "vault-pass-secret: ${{ secrets.VAULT_PASSWORD }}"
