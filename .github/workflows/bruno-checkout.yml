@@ -13,7 +13,7 @@ env:
 jobs:
   run-bruno:
     runs-on: ubuntu-latest
-    environment: 'DEV'
+    environment: 'QA'
     steps:
     - name: print all stuff
       run: |
